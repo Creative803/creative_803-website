@@ -3,6 +3,7 @@
   <title>The Official Creative Bros Website</title>
 </head>
 <body>
+  <button onclick="myFunction()">Toggle dark mode</button>
   <h1 style="text-align: center;">CREATIVE BROS OFFICIAL HOMEPAGE!!!</h1><br>
   <img id="join" onclick="discord()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1bnPCDpI6tGdgnZOu3kkKG4OTQ-doRFJIWg&usqp=CAU"><br>
   <button id="viewbuto" onclick="viewch()">Haven't seen the channel yet!?</button>
@@ -45,10 +46,12 @@
     left: 500px;
     font-family: Times New Roman;
   }
-  body  {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwOtLUzGhbsfRlT');
- 
-}
+  body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
 
 .dark-mode {
   background-color: black;
@@ -64,6 +67,10 @@
   }
   function subm()  {
     window.open("https://docs.google.com/forms/d/e/1FAIpQLSeiQI81UbkwdNepexyLawxoxD6u8PCos-BH9kHkVVoZTcp9ag/viewform?usp=sf_link");
+  }
+  function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
   }
 </script>
 </html>
